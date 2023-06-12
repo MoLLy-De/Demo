@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b03e8b804216413cac744353d07f7911" Name="Diagram1">
+        <EntityTypeShape EntityType="yvelirkaModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.OrderProduct" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.OrderStatus" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.PickupPoint" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.Product" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.Provider" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.Role" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yvelirkaModel.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="yvelirkaModel.FK__Order__OrderPick__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__Order__OrderStat__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__Order__OrderUser__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__OrderProd__Order__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__OrderProd__Produ__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__Product__Product__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="yvelirkaModel.FK__User__UserRole__0519C6AF" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="AF_WPF.EfitOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AF_WPF"
+        mc:Ignorable="d"
+        Title="EfitOrder" Height="600" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="ProductPanel" DataContext="{Binding Order}">
+                <Label Content="Номер" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox x:Name="ArticleText" Height="25" Margin="0 0 0 5" Text="{Binding OrderID}"></TextBox>
+                <Label Content="Дата" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox x:Name="NameText" Height="25" Margin="0 0 0 5" Text="{Binding OrderDate}"></TextBox>
+                <Label Content="Статус" Height="22" Margin="0 0 0 5" FontSize="9" ></Label>
+                <TextBox x:Name="DescriptionText" Height="25" Margin="0 0 0 5" Text="{Binding OrderStatus}"></TextBox>
+                <Label Content="дата доставки" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox Height="25" Margin="0 0 0 5" Text="{Binding OrderDeliveryDate}"></TextBox>
+                <Label Content="Пункт выдачи" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox x:Name="ProviderBox" Height="25" Margin="0 0 0 5" Text="{Binding OrderPickupPoint}"></TextBox>
+                <Label Content="Клиент" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox x:Name="ManufactureText" Height="25" Margin="0 0 0 5" Text="{Binding OrderUserID}"></TextBox>
+                <Label Content="Код" Height="22" Margin="0 0 0 5" FontSize="9"></Label>
+                <TextBox Height="25" Margin="0 0 0 5" Text="{Binding OrderCode}"></TextBox>
+                <Button x:Name="UpBut" Height="25" Margin="0 15 0 5" Content="Обновить" FontFamily="Comic Sans MS" Background="#FF498C51" Foreground="White" Click="UpBut_Click"></Button>
+                <Button x:Name="DelBut" Height="25" Margin="0 15 0 5" Content="Удалить" FontFamily="Comic Sans MS" Background="#FF498C51" Foreground="White" Click="DelBut_Click"></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
